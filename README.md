@@ -1,4 +1,5 @@
 # 🍑 Crypthi.cc
+A thicc wall of cryptography - all that stands between your messages and the world with Secure Message Application.
 
 This project is a secure message application, designed to prioritize your privacy! It is built using SvelteKit and Supabase. The unique features of this application make sure that the messages are always encrypted and hashed to ensure security and confidentiality.
 
