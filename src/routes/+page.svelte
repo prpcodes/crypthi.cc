@@ -63,7 +63,7 @@
 	}
 </script>
 
-<Card class="w-[380px]">
+<Card class="md:w-[380px] md:h-max w-full h-full">
 	<CardHeader>
 		<CardTitle>🍑 Crypthi.cc</CardTitle>
 		<CardDescription>
