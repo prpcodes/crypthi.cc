@@ -53,15 +53,15 @@ npm run dev
 
 ### 📬 Create a New Message
 
-Navigate to /create in your browser. Enter your message and a password, then click "Submit". The encrypted message will be stored on the server, and you'll be given a unique ID for the message.
+Navigate to / in your browser. Enter your message and a password, then click "Encrypt Message". The encrypted message will be stored on the server, and you'll be given a unique ID for the message.
 
 ### 👀 View an Existing Message
 
-Navigate to /message/<message-id>?password_hash=<hashed-password> in your browser. Replace <message-id> with the ID of the message you want to view and <hashed-password> with the hashed password for that message.
+Navigate to /message-id in your browser. Replace message-id with the ID of the message you want to view. Enter the password to and click "Decrypt Message".
 
 ### 🗑️ Delete an Existing Message
 
-You can only delete a message if you know the password. To delete a message, you would call a DELETE request on /messages/<message-id>?password_hash=<hashed-password>.
+You can only delete a message if you know the password. To delete a message, you would first navigate to the message /message-id, decrypt the message and hit "Delete Message".
 
 ### 🛡️ Security
 
@@ -79,4 +79,4 @@ Contributions are welcome! Please submit a pull request with any improvements.
 
 This project is licensed under the MIT License.
 
-💡 NOTE: Always remember, no security measure is 100% foolproof. Therefore, please use this application responsibly and do not rely on it for extremely sensitive information.
+> 💡 NOTE: Always remember, no security measure is 100% foolproof. Therefore, please use this application responsibly and do not rely on it for extremely sensitive information.
