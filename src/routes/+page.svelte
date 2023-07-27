@@ -14,8 +14,10 @@
 	import { ExplanationDialog } from '$components/ui/explanation-dialog';
 
 	import { encryptMessage, hashPassword } from '$lib/utils/security';
+	import { ArrowRight } from 'lucide-svelte';
 	import Label from '$components/ui/label/Label.svelte';
 	import toast from 'svelte-french-toast';
+	import { goto } from '$app/navigation';
 
 	let message = '';
 	let password = '';
@@ -61,7 +63,7 @@
 	}
 </script>
 
-<Card class="w-[380px] ">
+<Card class="w-[380px]">
 	<CardHeader>
 		<CardTitle>🍑 Crypthi.cc</CardTitle>
 		<CardDescription>
@@ -91,9 +93,12 @@
 				<Button class="w-full" type="submit">Encrypt Message</Button>
 			</CardFooter>
 		{:else}
-			<CardFooter>
-				<Button type="button" on:click={() => handleCopyToClipboard(id)} class="w-full">
+			<CardFooter class="flex justify-between w-full">
+				<Button type="button" on:click={() => handleCopyToClipboard(id)} class="w-2/3">
 					Copy Link
+				</Button>
+				<Button type="button" on:click={() => goto(id)} class="w-1/3 ml-2">
+					<ArrowRight />
 				</Button>
 			</CardFooter>
 		{/if}
