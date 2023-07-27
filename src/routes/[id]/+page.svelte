@@ -36,12 +36,21 @@
 
 			message = decryptMessage(encryptedMessage, password);
 			if (message === '') {
-				toast.error('Invalid password, please try again. 🤨');
+				toast.error('Invalid password, please try again.', {
+					icon: '🤨',
+					position: 'bottom-center'
+				});
 			} else {
-				toast.success('Message has been decrypted! 😎');
+				toast.success('Message has been decrypted!', {
+					icon: '😎',
+					position: 'bottom-center'
+				});
 			}
 		} else {
-			toast.error('Could not decrypt message. 😭');
+			toast.error('Could not decrypt message.', {
+				icon: '😭',
+				position: 'bottom-center'
+			});
 		}
 	}
 	async function handleDelete() {
@@ -57,9 +66,15 @@
 		if (res.ok) {
 			navigator.clipboard.writeText('');
 			goto('/');
-			toast.success('Message has been destroyed! 🔥');
+			toast.success('Message has been destroyed!', {
+				icon: '🔥',
+				position: 'bottom-center'
+			});
 		} else {
-			toast.error('Could not delete message. 😭');
+			toast.error('Could not delete message.', {
+				icon: '😭',
+				position: 'bottom-center'
+			});
 		}
 	}
 </script>

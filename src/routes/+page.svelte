@@ -25,7 +25,8 @@
 		await navigator.clipboard.writeText(text);
 
 		toast.success('Copied link to clipboard', {
-			icon: '📎'
+			icon: '📎',
+			position: 'bottom-center'
 		});
 	};
 
@@ -48,11 +49,13 @@
 			const { id: messageId } = await res.json();
 			id = `https://crypthi.cc/${messageId}`;
 			toast.success('Message has been encrypted!', {
-				icon: '😎'
+				icon: '😎',
+				position: 'bottom-center'
 			});
 		} else {
 			toast.error('Could not encrypt message.', {
-				icon: '😭'
+				icon: '😭',
+				position: 'bottom-center'
 			});
 		}
 	}
