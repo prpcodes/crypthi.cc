@@ -19,13 +19,13 @@ To setup this project, ensure you have Node.js and npm installed.
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/secure-message-application.git
+git clone https://github.com/prpcodes/crypthi.cc.git
 ```
 
 Navigate into the project folder:
 
 ```bash
-cd secure-message-application
+cd crypthi.cc
 ```
 
 Install dependencies:
@@ -37,15 +37,13 @@ npm install
 Create a .env file at the root of your project and fill it with your Supabase URL and anonymous key:
 
 ```bash
-SUPABASE_URL=YOUR_SUPABASE_URL
-SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
 ```
 
 Run the project:
 
-```
-bash
-Copy code
+```bash
 npm run dev
 ```
 
