@@ -4,7 +4,7 @@
 	import toast, { Toaster } from 'svelte-french-toast';
 </script>
 
-<div class="flex items-center justify-center w-screen h-screen">
+<main class="flex items-center justify-center w-screen h-screen">
 	<Toaster />
 	<slot />
-</div>
+</main>
