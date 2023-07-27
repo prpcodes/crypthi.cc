@@ -67,7 +67,7 @@
 	<CardHeader>
 		<CardTitle>🍑 Crypthi.cc</CardTitle>
 		<CardDescription>
-			Send password-protected messages to anyone, anywhere.
+			A thicc wall of cryptography - that stands between your messages and the world.
 			<ExplanationDialog />
 		</CardDescription>
 	</CardHeader>
